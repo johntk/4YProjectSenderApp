@@ -1,2 +1,2 @@
-# Android sender application 
+# Android Sender Application 
 Java 
