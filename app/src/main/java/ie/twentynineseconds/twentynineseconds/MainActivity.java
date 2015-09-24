@@ -33,7 +33,7 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mButton;
+//    private Button mButton;
 
     private MediaRouter mMediaRouter;
     private MediaRouteSelector mMediaRouteSelector;
@@ -239,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
         if( mApiClient != null ) {
             if( mApplicationStarted ) {
                 try {
-                    Cast.CastApi.stopApplication( mApiClient );
+                       Cast.CastApi.stopApplication( mApiClient );
                     if( mRemoteMediaPlayer != null ) {
                         Cast.CastApi.removeMessageReceivedCallbacks( mApiClient, mRemoteMediaPlayer.getNamespace() );
                         mRemoteMediaPlayer = null;
